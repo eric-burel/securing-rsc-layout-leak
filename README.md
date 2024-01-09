@@ -1,3 +1,27 @@
+
+## Hack this app in one easy step
+
+This application demonstrate checking authentication in a layout,
+and assuming that pages within this layout are not accessible.
+
+Sadly, this won't work.
+
+Send a GET request on `http://localhost:3000/` with the `RSC` header set to 1.
+You'll be able to access the paid content.
+
+Possible solutions are:
+- checking authentication in a middleware
+- checking authentication in the page
+- checking authentication in the data fetching method
+
+This will rarely happen when fetching user-specific data, 
+because you indirectly check authentication anytime you retrieve the current authenticated user.
+
+However this mistake can happen when fetching generic but private data, like a paid blog post.
+
+
+---
+
 This is a [Next.js](https://nextjs.org/) template to use when reporting a [bug in the Next.js repository](https://github.com/vercel/next.js/issues) with the `app/` directory.
 
 ## Getting Started
