@@ -1,7 +1,7 @@
 
 ## Hack this app in one easy step
 
-This application demonstrate checking authentication in a layout,
+This application demonstrates checking authentication in a layout,
 and assuming that pages within this layout are not accessible.
 
 Sadly, this won't work.
